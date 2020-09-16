@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+}
+
+.IBAN-contenedor, 
+.matricula-contenedor,
+.creditcard-contenedor,  
+.imagenes-contenedor, 
+.password-contenedor, 
+.colorHex-contenedor {
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1px 30px 10px 30px;
+}
+
+.resultado-IBAN,
+.resultado-matricula, 
+.resultado-creditcard, 
+.resultado-password, 
+.resultado-hexColor {
+    border-radius: 5px;
+    border: solid 1px darkgray;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.linea-IBAN,
+.linea-matricula,
+.linea-creditcard, 
+.linea-password, 
+.linea-hexColor {
+    padding: 2px;
+}
+
+.dato-IBAN,
+.dato-matricula, 
+.dato-creditcard, 
+.dato-password, 
+.dato-hexColor {
+    font-size: 16px;
+    color: green;
+}
+
+.resultado-imagenes {
+    margin: 30px 0px 0px 0px;
+
+    border-radius: 5px;
+    border: solid 1px darkgray;
+    background-color: #f2f2f2;
+    padding: 30px 30px 30px 30px;
+}
+
+.linea-imagen {
+    padding: 2px;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-right: 30px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 20px;
+}
+
+input[type="text"].error {
+    color: red;
+    border: 1px solid red;
+}
+
+input[type="text"].correct {
+    color: green;
+    border: 1px solid green;
+}
+
+span {
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+.btn-extraer {
+    width: 15%;
+    background-color: #0c09db;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.linea-imagen {
+    display: block;
+}
+
+.linea-imagen {
+    font-size: 24;
+}

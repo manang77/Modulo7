@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Modulo 7</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio Modulo 7 - Expresiones regulares</h1>
+    </header>
+    <main>
+        <div class="IBAN-contenedor">
+            <h2>Validacion codigo IBAN</h2>
+            <label for="ibanCode"><b>Codigo IBAN a validar</b></label>
+            <input type="text" id="ibanCode" name="ibanCode" placeholder="AA99 9999 9999 9999 9999 9999" />
+            <div class="resultado-IBAN">
+                <div class="linea-IBAN">
+                    <span>CODIGO DE PAIS:&nbsp;</span><b><span id="ibanCountry" class="dato-IBAN"></span></b>
+                </div>
+                <div class="linea-IBAN">
+                    <span>DIGITO DE CONTROL:&nbsp;</span><b><span id="ibanControlDigits" class="dato-IBAN"></span></b>
+                </div>
+            </div>
+        </div>
+        <div class="matricula-contenedor">
+            <h2>Validacion Matriculas</h2>
+            <label for="matricula"><b>Matricula a validar</b></label>
+            <input type="text" id="matricula" name="matricula" placeholder="9999-AAA" />
+            <div class="resultado-matricula">
+                <div class="linea-matricula">
+                    <span>NUMEROS DE LA MATRICULA:&nbsp;</span><b><span id="matriculaNumbers" class="dato-matricula"></span></b>
+                </div>
+                <div class="linea-matricula">
+                    <span>LETRAS DE LA MATRICULA:&nbsp;</span><b><span id="matriculaLetters" class="dato-matricula"></span></b>
+                </div>
+            </div>
+        </div>
+        <div class="creditcard-contenedor">
+            <h2>Validacion Tarjeta Credito Master Card</h2>
+            <label for="creditCard"><b>Numero de tarjeta a validar</b></label>
+            <input type="text" id="creditCard" name="creditCard" placeholder="9999-9999-9999-9999" />
+            <div class="resultado-creditcard">
+                <div class="linea-creditcard">
+                    <span>GRUPO 1 TARJETA:&nbsp;</span><b><span id="creditCardGroup1" class="dato-creditcard"></span></b>
+                </div>
+                <div class="linea-creditcard">
+                    <span>GRUPO 2 TARJETA:&nbsp;</span><b><span id="creditCardGroup2" class="dato-creditcard"></span></b>
+                </div>
+                <div class="linea-creditcard">
+                    <span>GRUPO 3 TARJETA:&nbsp;</span><b><span id="creditCardGroup3" class="dato-creditcard"></span></b>
+                </div>
+                <div class="linea-creditcard">
+                    <span>GRUPO 4 TARJETA:&nbsp;</span><b><span id="creditCardGroup4" class="dato-creditcard"></span></b>
+                </div>
+            </div>
+        </div>
+        <div class="password-contenedor">
+            <h2>Evaluacion complejidad Password</h2>
+            <label for="password"><b>Password a Validar</b></label>
+            <input type="text" id="password" name="password" placeholder="Introduce una password"/>
+            <div class="resultado-password">
+                <div class="linea-password">
+                    <span>COMPLEJIDAD PASSWORD:&nbsp;</span><b><span id="passwordType" class="dato-password"></span></b>
+                </div>
+            </div>
+        </div>
+        <div class="colorHex-contenedor">
+            <h2>Validar Codigo de Color Hexadecimal</h2>
+            <label for="hexColor"><b>Color Hexadecimal a Validar</b></label>
+            <input type="text" id="hexColor" name="hexColor" placeholder="#FFFFFF"/>
+            <div class="resultado-hexColor">
+                <div class="linea-hexColor">
+                    <span>RESULTADO:&nbsp;</span><b><span id="validColor" class="dato-hexColor"></span></b>
+                </div>
+            </div>
+        </div>
+        <div class="imagenes-contenedor">
+            <h2>Extraccion imagenes HTML</h2>
+            <div class="htmlField-container">
+                <label for="htmlText"><b>HTML Extraer Imagenes</b></label></br>
+                <textarea id="htmlText" name="htmlText" rows="20" cols="125"></textarea>
+            </div>
+            <div class="boton-container">
+                <button class="btn-extraer" id="btn-extract">Extraer</button>
+            </div>
+            <div id = "imagesResult" class="resultado-imagenes">
+                <div class="linea-imagen">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
