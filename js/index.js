@@ -3,8 +3,8 @@ const MATRICULA_PATTERN = /^(\d{4})[\s-]{0,1}([B-DF-HJ-NP-TV-Z]{3})$/;
 const CREDITCARD_PATERN = /^(5[0-5]\d{2})[\s-]{0,1}(\d{4})[\s-]{0,1}(\d{4})[\s-]{0,1}(\d{4})$/;
 const MODERATE_PASSWORD_PATTERN = /^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$/
 const COMPLEX_PASSWORD_PATTERN = /^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$/;
-const HEX_COLOR_PATTERN = /^#([A-F]|[a-f]){6}$/;
-const HTML_IMAGES_PATTERN = /^<img src="(?<fichero>.+\.(jpg|png|gif))"\/>$/gim;
+const HEX_COLOR_PATTERN = /^#([A-F]|[a-f]|[0-9]){6}$/;
+const HTML_IMAGES_PATTERN = /^<img src="(.+\.(jpg|png|gif))"\/>$/gim;
 
 var validCode = (codeToValidate, patternToApply) => (new RegExp(patternToApply)).test(codeToValidate);
 
